@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:myfirstproject/profile_view.dart';
+import 'package:myfirstproject/assignment2/profilecard.dart';
+import 'package:myfirstproject/lab/buttonfloating.dart';
+// import 'package:myfirstproject/profile_view.dart';
 
 void main() {
   print("app is running");
@@ -12,7 +14,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: ProfileView(),
+      home: Profilecard(),
     );
   }
 }
