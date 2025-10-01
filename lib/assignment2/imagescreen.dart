@@ -12,20 +12,25 @@ class Imagescreen extends StatelessWidget {
         title: Text("Image"),
         centerTitle: true,
       ),
-      body: Center(
+      body: Padding(
+        padding: const EdgeInsets.only(top: 50,left: 18),
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             Text("Image",style: TextStyle(fontSize: 40,fontWeight: FontWeight.bold),),
-            Container(
-              height: 300,
-              width: 300,
-              
-              decoration: BoxDecoration(
+            Padding(
+              padding: const EdgeInsets.only(top: 20),
+              child: Container(
+                height: 300,
+                width: 300,
                 
-                image: DecorationImage(image: AssetImage("assets/images/appdev.png"),fit: BoxFit.cover)
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(200),
+                  image: DecorationImage(image: AssetImage("assets/images/my.jpg"),fit: BoxFit.cover)
+                ),
               ),
             ),
+            Text("I am mobile app developer",style: TextStyle(fontSize: 30,fontWeight: FontWeight.w500),textAlign: TextAlign.center,)
           ],
         ),
       ),
